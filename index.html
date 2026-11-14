@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CELF ELETRIC SOLUTIONS | Energia solar e projetos elétricos</title>
+<meta name="description" content="Energia solar, quadros e projetos elétricos, automação, SPDA e NR-10 em Duque de Caxias. Atendemos todo o Brasil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1117;--night:#0F2233;--amber:#FFB21E;--green:#1E6B52;--bone:#D6D2CA;--white:#F5F2EA;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--bone);font:400 17px/1.6 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;color:var(--white);line-height:1;margin:0;text-transform:uppercase;letter-spacing:.01em}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 26px "Barlow Condensed",sans-serif;color:var(--white);text-decoration:none;letter-spacing:.04em}
+.logo b{color:var(--amber)}
+nav{display:flex;gap:28px;align-items:center}
+nav a{text-decoration:none;font-size:15px}
+nav a:hover{color:var(--white)}
+.btn{display:inline-block;background:var(--amber);color:#1a1200;font-weight:500;padding:14px 26px;border-radius:6px;text-decoration:none;border:0}
+.btn:hover{background:#ffc247}
+.btn.ghost{background:rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--white);border:1px solid rgba(255,255,255,.12)}
+.btn.ghost:hover{border-color:var(--amber);color:var(--amber)}
+.hero{padding:clamp(64px,12vw,140px) 0 clamp(56px,9vw,100px);background:linear-gradient(180deg,var(--night),var(--bg) 85%)}
+.hero h1{font-size:clamp(44px,8.5vw,104px);max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p{max-width:52ch;font-size:19px;margin:24px 0 32px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:64px}
+.facts div{background:rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 22px}
+.facts strong{display:block;color:var(--white);font:600 22px "Barlow Condensed",sans-serif;letter-spacing:.03em;text-transform:uppercase}
+.facts span{font-size:15px}
+section{position:relative}
+.services{padding:clamp(64px,9vw,110px) 0;overflow:hidden}
+.burst{position:absolute;top:-180px;right:-220px;width:780px;height:780px;pointer-events:none}
+.burst canvas{width:100%;height:100%;display:block}
+.services .wrap{position:relative;z-index:2}
+.services h2,.about h2,.final h2{font-size:clamp(34px,5vw,60px);max-width:16ch}
+.lead{max-width:56ch;margin:16px 0 40px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(180px,22vw,260px)}
+.glass{background:rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:26px}
+.glass h3{font-size:26px;margin-bottom:10px}
+.glass p{margin:0;font-size:16px}
+.glass .n{color:var(--amber);font:600 15px "Barlow Condensed",sans-serif;letter-spacing:.12em;display:block;margin-bottom:14px}
+.about{padding:clamp(56px,8vw,96px) 0;background:var(--night);overflow:hidden;isolation:isolate}
+.about .wrap{position:relative;z-index:1}
+.about::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;filter:blur(2px);background:conic-gradient(from 165deg at 88% -8%,transparent 0 4deg,rgba(255,178,30,.3) 4deg 7deg,transparent 7deg 14deg,rgba(255,178,30,.26) 14deg 20deg,transparent 20deg 28deg,rgba(255,178,30,.3) 28deg 31deg,transparent 31deg 40deg,rgba(255,178,30,.24) 40deg 48deg,transparent 48deg 58deg,rgba(255,178,30,.28) 58deg 61deg,transparent 61deg);-webkit-mask-image:radial-gradient(circle at 88% -8%,#000 0,transparent 85%);mask-image:radial-gradient(circle at 88% -8%,#000 0,transparent 85%);animation:sun 7s ease-in-out infinite}
+.about::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 88% -8%,rgba(255,178,30,.5),rgba(255,178,30,.12) 25%,transparent 55%)}
+@keyframes sun{50%{opacity:.6}}
+@media(prefers-reduced-motion:reduce){.about::before{animation:none}}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.about ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.about li{padding:18px 20px 18px 46px;position:relative;background:rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12);border-radius:14px}
+.about li::before{content:"";position:absolute;left:20px;top:30px;width:14px;height:2px;background:var(--amber)}
+.about li strong{color:var(--white);font-weight:500}
+.final{padding:clamp(80px,12vw,150px) 0 clamp(48px,6vw,72px);overflow:hidden;isolation:isolate}
+.final canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;display:block}
+.final::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg),rgba(11,17,23,.1) 40%,rgba(11,17,23,.55))}
+.final h2{color:var(--white)}
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:48px 0 56px}
+.contact .glass{padding:20px 22px}
+.contact small{display:block;color:var(--amber);letter-spacing:.1em;text-transform:uppercase;font-size:13px;margin-bottom:6px}
+.contact span{color:var(--white)}
+footer{font-size:14px;border-top:1px solid rgba(255,255,255,.15);padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.floats{display:flex;gap:16px;flex-wrap:wrap;margin-top:clamp(180px,22vw,260px)}
+.fl{font:600 26px "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--white);cursor:pointer;padding:18px 34px;border-radius:999px;animation:fl 5s ease-in-out infinite;position:relative;overflow:hidden;isolation:isolate}
+.fl:nth-child(2){animation-delay:-1.6s}.fl:nth-child(3){animation-delay:-3.2s}
+.fl.on,.fl:hover{border-color:var(--amber)}
+.fl::before{content:"";position:absolute;left:-60%;top:100%;width:220%;height:220%;background:linear-gradient(180deg,rgba(255,178,30,.55),rgba(255,178,30,.3));border-radius:42%;z-index:-1}
+.fl.on::before{animation:rise 1.3s cubic-bezier(.3,.7,.3,1) forwards,spin 7s linear infinite}
+@keyframes rise{from{top:100%}to{top:-30%}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.glass,.facts div,.about li,.btn{transition:scale .25s ease,border-color .2s,color .2s,background .2s}
+.glass:hover,.facts div:hover,.about li:hover,.btn:hover{scale:1.05}
+.panel:hover{scale:1}
+.panel::after{content:"";position:absolute;left:-60%;top:100%;width:220%;height:260%;background:linear-gradient(180deg,rgba(255,178,30,.28),rgba(255,178,30,.14));border-radius:42%;z-index:2;pointer-events:none}
+.panel.fill::after{animation:rise 1.6s cubic-bezier(.3,.7,.3,1) forwards,spin 9s linear infinite}
+@keyframes fl{50%{transform:translateY(-9px)}}
+@media(prefers-reduced-motion:reduce){.fl{animation:none}.panel.fill::after{animation:none;top:-30%}.fl.on::before{animation:none;top:-30%}}
+.panel{margin-top:20px;padding:30px;max-width:760px;position:relative;overflow:hidden;isolation:isolate}.panel h3{font-size:32px;margin-bottom:12px;color:var(--white)}.panel p{margin:0}.panel ol{margin:0;padding-left:22px;display:grid;gap:10px}
+@media(max-width:860px){.floats{margin-top:140px}}
+@media(max-width:620px){.fl{flex:1 1 100%;font-size:22px}.logo{font-size:19px}}
+@media(max-width:860px){.grid,.contact{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr;gap:28px}.burst{width:560px;height:560px;top:-150px;right:-200px}.grid{margin-top:140px}}
+@media(max-width:620px){nav a:not(.btn){display:none}.facts,.grid,.contact{grid-template-columns:1fr}.btn{padding:13px 20px}.cta .btn{flex:1;text-align:center}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#">CELF <b>ELETRIC</b> SOLUTIONS</a><nav><a href="#servicos">Missão e valores</a><a href="#diferenciais">Diferenciais</a><a class="btn" href="https://wa.me/5521964604889?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a></nav></div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+<h1>Transforme energia em <em>economia</em> e sustentabilidade para o seu negócio.</h1>
+<p>Energia solar, quadros e projetos elétricos, automação, SPDA e NR-10. Estamos em Duque de Caxias e entregamos em todo o Brasil.</p>
+<div class="cta"><a class="btn" href="https://wa.me/5521964604889?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento</a><a class="btn ghost" href="#servicos">Missão e valores</a></div>
+<div class="facts"><div><strong>Seg a sex, 8h às 18h</strong><span>Rua Adelino Ferreira, Duque de Caxias</span></div><div><strong>Todo o Brasil</strong><span>Entregamos em todo o país</span></div></div>
+</div></section>
+
+<section class="services" id="servicos">
+<div class="burst" aria-hidden="true"><canvas id="burst"></canvas></div>
+<div class="wrap">
+<h2>Missão, visão e valores</h2>
+<p class="lead">Conheça o que move a CELF ELETRIC SOLUTIONS.</p>
+<div class="stage"><div class="floats"><button type="button" class="glass fl" data-k="m">Missão</button><button type="button" class="glass fl" data-k="v">Visão</button><button type="button" class="glass fl" data-k="a">Valores</button></div>
+<div class="glass panel" id="panel" aria-live="polite"></div>
+</div></div></section>
+
+<section class="about" id="diferenciais"><div class="wrap cols">
+<h2>Por que escolher a Celf</h2>
+<ul>
+<li><strong>Atendimento local, alcance nacional.</strong> Estamos na Rua Adelino Ferreira, em Duque de Caxias, e entregamos em todo o Brasil.</li>
+
+<li><strong>NR-10 e SPDA.</strong> Entre os nossos serviços estão a adequação à NR-10 e a proteção contra descargas atmosféricas.</li>
+
+</ul></div></section>
+
+<section class="final" id="contato"><canvas id="wave" aria-hidden="true"></canvas>
+<div class="wrap">
+<h2>Pronto para pagar menos de energia?</h2>
+<p class="lead" style="color:var(--white)">Venha até nós ou peça um orçamento pelo WhatsApp.</p>
+<a class="btn" href="https://wa.me/5521964604889?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento</a>
+<div class="contact">
+<div class="glass"><small>Endereço</small><span>Rua Adelino Ferreira, Lote 8, Quadra H<br>Duque de Caxias, RJ</span></div>
+<div class="glass"><small>Horário</small><span>Segunda a sexta<br>das 8h às 18h</span></div>
+
+</div>
+<footer><span>© 2026 CELF ELETRIC SOLUTIONS</span><span>Energia solar · Projetos elétricos · Automação · SPDA · NR-10</span></footer>
+</div></section>
+</main>
+
+<script>
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const info={m:["Missão","<p>Projetar, executar e otimizar infraestruturas elétricas e soluções energéticas de alta complexidade, traduzindo as necessidades de cada cliente em projetos inovadores, seguros e com rigor normativo absoluto, garantindo máxima eficiência e tranquilidade jurídica.</p>"],v:["Visão","<p>Ser a maior e mais reconhecida empresa de engenharia elétrica e soluções energéticas da região, destacando-se pela entrega de projetos inovadores, rigorosamente normatizados e de altíssima qualidade, pautados pelo entendimento exato das expectativas de cada cliente.</p>"],a:["Valores","<ol><li>Centralidade e Escuta Ativa do Cliente</li><li>Rigor Normativo e Segurança Inegociável</li><li>Inovação Aplicada e Engenharia de Precisão</li><li>Transparência e Integridade Técnica</li><li>Busca Obstinada pela Excelência</li></ol>"]};
+const pn=document.getElementById("panel"),bs=document.querySelectorAll(".fl");
+function show(k){bs.forEach(b=>{const on=b.dataset.k===k;b.classList.toggle("on",on);b.setAttribute("aria-pressed",on)});pn.innerHTML="<h3>"+info[k][0]+"</h3>"+info[k][1];pn.classList.remove("fill");void pn.offsetWidth;pn.classList.add("fill")}
+bs.forEach(b=>b.onclick=()=>show(b.dataset.k));show("m");
+/* Raios (logo-burst) */
+(function(){
+const cv=document.getElementById("burst"),ctx=cv.getContext("2d"),box=cv.parentElement;
+let s=23;const rnd=()=>{s|=0;s=s+0x6d2b79f5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+const cl=(v,a,b)=>Math.min(b,Math.max(a,v)),N=260,D=1.35,T=[];
+for(let i=0;i<N;i++){const r=rnd(),a=i/N*6.2832+(rnd()-.5)*.113,len=r<.12?.22+rnd()*.18:r<.78?.48+rnd()*.32:.78+rnd()*.22,tip=rnd()<.62,mids=[];
+for(let m=rnd()<.22?2:rnd()<.48?1:0;m>0;m--)mids.push({t:.28+rnd()*.52,z:.55+rnd()*.7,a:.28+rnd()*.38});
+T.push({a,len:cl(len,.16,1),w:.35+rnd()*.85,al:.22+rnd()*.55,d:rnd()*.42+i/N*.08,g:.55+rnd()*.7,ph:rnd()*6.2832,tip,ts:.85+rnd()*1.35,mids})}
+let W=0,H=0,t0=performance.now(),settled=false,vis=true;
+function size(){const d=Math.min(devicePixelRatio||1,2);W=box.clientWidth;H=box.clientHeight;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0)}
+size();new ResizeObserver(size).observe(box);
+new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis&&!reduce)requestAnimationFrame(paint)}).observe(box);
+function paint(now){
+if(!vis)return;const cx=W/2,cy=H/2,R=Math.min(W,H)*.48,sec=now/1000,br=settled&&!reduce,f=br?Math.sin(sec*.92)*.015:0;
+ctx.clearRect(0,0,W,H);ctx.lineCap="round";let all=true;
+for(const q of T){let p=1;if(!reduce&&!settled){const x=cl(((now-t0)/1000-q.d*D)/(D*q.g),0,1);p=1-Math.pow(1-x,4)}
+if(p<1)all=false;const sc=1+f+(br?Math.sin(sec*1.28+q.ph)*.018:0),reach=R*q.len*p*sc;if(reach<.4)continue;
+const fade=br?.9+.1*Math.sin(sec*.92+q.ph*.35):1,c=Math.cos(q.a),n=Math.sin(q.a);
+ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+c*reach,cy+n*reach);ctx.strokeStyle=`rgba(214,210,202,${q.al*(.55+p*.45)*fade*.8})`;ctx.lineWidth=q.w;ctx.stroke();
+for(const m of q.mids){if(p<m.t)continue;ctx.beginPath();ctx.arc(cx+c*R*q.len*m.t*sc,cy+n*R*q.len*m.t*sc,m.z,0,6.2832);ctx.fillStyle=`rgba(214,210,202,${m.a*fade})`;ctx.fill()}
+if(q.tip&&p>.92){ctx.beginPath();ctx.arc(cx+c*R*q.len*sc,cy+n*R*q.len*sc,q.ts,0,6.2832);ctx.fillStyle=`rgba(255,178,30,${.8*fade*cl((p-.92)/.08,0,1)})`;ctx.fill()}}
+if(all)settled=true;if(!reduce)requestAnimationFrame(paint)}
+requestAnimationFrame(paint)})();
+
+/* Onda de gradiente (gradient-wave) */
+(function(){
+const cv=document.getElementById("wave"),gl=cv.getContext("webgl");if(!gl)return;
+const hex=h=>[1,3,5].map(i=>parseInt(h.substr(i,2),16)/255),cols=["#0B1117","#0F2A3D","#FFB21E","#1E6B52","#0F2A3D"].flatMap(hex);
+const vs="attribute vec2 p;void main(){gl_Position=vec4(p,0,1)}";
+const fs=`precision highp float;uniform vec2 r;uniform float t;uniform vec3 c[5];
+vec3 m3(vec3 x){return x-floor(x/289.)*289.}vec4 m4(vec4 x){return x-floor(x/289.)*289.}vec4 pm(vec4 x){return m4((x*34.+1.)*x)}
+float sn(vec3 v){const vec2 C=vec2(1./6.,1./3.);vec3 i=floor(v+dot(v,C.yyy)),x0=v-i+dot(i,C.xxx),g=step(x0.yzx,x0.xyz),l=1.-g,i1=min(g,l.zxy),i2=max(g,l.zxy),x1=x0-i1+C.xxx,x2=x0-i2+C.yyy,x3=x0-.5;i=m3(i);
+vec4 p=pm(pm(pm(i.z+vec4(0,i1.z,i2.z,1))+i.y+vec4(0,i1.y,i2.y,1))+i.x+vec4(0,i1.x,i2.x,1));vec3 ns=.142857142857*vec3(2.,.5,1.)-vec3(0.,1.,0.);
+vec4 j=p-49.*floor(p*ns.z*ns.z),x_=floor(j*ns.z),y_=floor(j-7.*x_),x=x_*ns.x+ns.yyyy,y=y_*ns.x+ns.yyyy,h=1.-abs(x)-abs(y),b0=vec4(x.xy,y.xy),b1=vec4(x.zw,y.zw),s0=floor(b0)*2.+1.,s1=floor(b1)*2.+1.,sh=-step(h,vec4(0));
+vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy,a1=b1.xzyw+s1.xzyw*sh.zzww;vec3 p0=vec3(a0.xy,h.x),p1=vec3(a0.zw,h.y),p2=vec3(a1.xy,h.z),p3=vec3(a1.zw,h.w);
+vec4 nm=1.79284291400159-.85373472095314*vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3));p0*=nm.x;p1*=nm.y;p2*=nm.z;p3*=nm.w;
+vec4 m=max(.6-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.);m*=m;return 42.*dot(m*m,vec4(dot(p0,x0),dot(p1,x1),dot(p2,x2),dot(p3,x3)))}
+void main(){vec2 u=gl_FragCoord.xy/r;u.x*=r.x/r.y;vec3 col=c[0];
+for(int i=1;i<5;i++){float k=float(i);float n=sn(vec3(u.x*(.9+.25*k)+t*.04*k,u.y*(1.6+.4*k)-u.x*.5,t*.07+k*9.))*.5+.5;col=mix(col,c[i],pow(smoothstep(.35,.85,n),2.5)*(.55+.1*k)*smoothstep(.1,.9,1.-u.y+.25*sn(vec3(u.x*2.,t*.05,k))))}
+gl_FragColor=vec4(col,1)}`;
+function sh(t,s){const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);return o}
+const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,vs));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,fs));gl.linkProgram(pr);gl.useProgram(pr);
+if(!gl.getProgramParameter(pr,gl.LINK_STATUS))return;
+gl.bindBuffer(gl.ARRAY_BUFFER,gl.createBuffer());gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+const lp=gl.getAttribLocation(pr,"p");gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
+gl.uniform3fv(gl.getUniformLocation(pr,"c"),cols);const ur=gl.getUniformLocation(pr,"r"),ut=gl.getUniformLocation(pr,"t");
+let vis=true,t=0,last=0;
+function size(){const w=cv.clientWidth*.75|0,h=cv.clientHeight*.75|0;cv.width=w;cv.height=h;gl.viewport(0,0,w,h);gl.uniform2f(ur,w,h)}
+size();new ResizeObserver(size).observe(cv);
+function draw(now){if(!vis)return;t+=Math.min(now-last,66)/1000;last=now;gl.uniform1f(ut,t+3);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);if(!reduce)requestAnimationFrame(draw)}
+new IntersectionObserver(e=>{vis=e[0].isIntersecting;if(vis){last=performance.now();requestAnimationFrame(draw)}}).observe(cv);
+})();
+</script>
+</body>
+</html>
